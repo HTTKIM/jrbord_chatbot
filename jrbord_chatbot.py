@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")
-st.title(":male-technologist: 주니어보드 챗봇")
+st.title(":computer: 주니어보드 챗봇")
 st.subheader("복지 관련 내용을 답변할 수 있습니다", divider="gray")
 
 
