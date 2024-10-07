@@ -19,7 +19,7 @@ col1, col2 = st.columns([1, 8])
 
 # 로고 넣기 (col1에 배치)
 with col1:
-    st.image("/mnt/data/image.png", width=40)
+    st.image("image.png", width=40)
 
 # 제목 넣기 (col2에 배치)
 with col2:
