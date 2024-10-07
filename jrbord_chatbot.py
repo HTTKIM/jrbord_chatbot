@@ -15,11 +15,21 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")
-col1, col2 = st.columns([3,1])
+col1, col2 = st.columns([3, 1])
+
+# 로고 넣기 (col1에 배치)
 with col1:
-    st.title(":computer: 주니어보드 챗봇")
+    st.image("image.png", width=60)
+
+# 제목 넣기 (col2에 배치)
 with col2:
-    st.image("image.png", use_column_width=True)
+    st.markdown("<h1 style='display: inline; vertical-align: middle;'>주니어보드 챗봇</h1>", unsafe_allow_html=True)
+
+# col1, col2 = st.columns([3,1])
+# with col1:
+#     st.title(":computer: 주니어보드 챗봇")
+# with col2:
+#     st.image("image.png", use_column_width=True)
     
 st.subheader("복지 관련 내용 검색기")
 st.markdown("- 복지관련 기준 내용을 분할하여 입력하였습니다")
