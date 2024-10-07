@@ -15,12 +15,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")
-image = Image.open("image.png")
 col1, col2 = st.columns([3,1])
 with col1:
     st.title(":computer: 주니어보드 챗봇")
 with col2:
-    st.image(image, use_column_width=True)
+    st.image("image.png", use_column_width=True)
     
 st.subheader("복지 관련 내용 검색기")
 st.markdown("- 복지관련 기준 내용을 분할하여 입력하였습니다")
