@@ -20,7 +20,7 @@ st.markdown("- 복지관련 기준 내용을 분할하여 입력하였습니다"
 st.markdown("- 검색하고자 하는 내용을 아래 메시지 창에 입력해 주세요")
 st.markdown("- 입력 내용이 상세할수록 답변이 정확합니다")
 st.divider()
-st.sidebar.wrtite("복지와 관련된 기준 목록")
+st.sidebar.write("복지와 관련된 기준 목록")
 
 with st.sidebar.expander("임베딩 문서목록"):
     st.write("""
