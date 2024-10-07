@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")
-image = Image.open("Jrboardchatimage.png")
+image = Image.open("image.png")
 col1, col2 = st.columns([3,1])
 with col1:
     st.title(":computer: 주니어보드 챗봇")
