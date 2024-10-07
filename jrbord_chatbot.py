@@ -14,27 +14,7 @@ from langchain_openai.embeddings import OpenAIEmbeddings
 from dotenv import load_dotenv
 load_dotenv()
 
-st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")
-
-# 전체 레이아웃 설정
-st.markdown(
-    """
-    <div style="display: flex; align-items: center;">
-        <h1 style="margin: 0; padding-right: 10px;">주니어보드 챗봇</h1>
-        <img src="data:image/png;base64,{image}" style="width: 120px; margin-left: 10px;">
-    </div>
-    """.format(image=st.image("image_1.png", output_format="auto").decode("utf-8")),
-    unsafe_allow_html=True
-)
-
-
-
-# col1, col2 = st.columns([3,1])
-# with col1:
-#     st.title(":computer: 주니어보드 챗봇")
-# with col2:
-#     st.image("image.png", use_column_width=True)
-    
+st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")   
 st.subheader("복지 관련 내용 검색기")
 st.markdown("- 복지관련 기준 내용을 분할하여 입력하였습니다")
 st.markdown("- 검색하고자 하는 내용을 아래 메시지 창에 입력해 주세요")
