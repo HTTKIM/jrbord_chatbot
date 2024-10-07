@@ -64,7 +64,7 @@ def display_retrieved_documents(documents):
     with st.expander("참조 문서 확인"):
         for idx, doc in enumerate(documents):
             source = os.path.basename(doc.metadata["source"])
-            st.markdown(f"**Document {idx+1} from {source}**")
+            st.markdown(f"** from {source}**")
             st.markdown(doc.page_content)
 
 db = get_faiss_db()
