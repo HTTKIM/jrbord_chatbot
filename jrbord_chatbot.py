@@ -16,7 +16,7 @@ load_dotenv()
 
 st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")
 st.title(":computer: 주니어보드 챗봇")
-st.subheader("복지 관련 내용을 답변할 수 있습니다", divider="gray")
+st.subheader("복지 관련 내용 검색기", divider="rainbow")
 
 
 @st.cache_resource(ttl="1h")
