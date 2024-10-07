@@ -1,0 +1,11 @@
+langchain
+openai
+tiktoken
+langchain_community
+langchain_core
+langchain_experimental
+langchain_openai
+python-dotenv
+sentence-transformers
+faiss-cpu
+langchain-huggingface
