@@ -21,6 +21,7 @@ st.markdown("- 검색하고자 하는 내용을 아래 메시지 창에 입력�
 st.markdown("- 입력 내용이 상세할수록 답변이 정확합니다")
 st.divider()
 st.sidebar.wrtite("복지와 관련된 기준 목록")
+
 with st.sidebar.expander("임베딩 문서목록"):
     st.write("""
     1. 가족수당지급기준  
