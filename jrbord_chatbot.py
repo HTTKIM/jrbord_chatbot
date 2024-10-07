@@ -17,8 +17,10 @@ load_dotenv()
 st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")
 st.title(":computer: 주니어보드 챗봇")
 st.subheader("복지 관련 내용 검색기")
-st.markdown("*Streamlit* is **really** ***cool***.")
-st.subheader(divider="rainbow")
+st.markdown("- 복지관련 기준 내용을 분할하여 입력하였습니다")
+st.markdown("- 검색하고자 하는 내용을 아래 메시지 창에 입력해 주세요")
+st.markdown("- 입력 내용이 상세할수록 답변이 정확합니다")
+st.divider()
 
 @st.cache_resource(ttl="1h")
 def get_faiss_db():
