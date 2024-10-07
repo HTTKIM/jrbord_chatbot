@@ -15,15 +15,22 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="JR. Board Chat", page_icon=":computer:")
-col1, col2 = st.columns([3, 1])
+col1, col2 = st.columns([1, 8])
 
 # 로고 넣기 (col1에 배치)
 with col1:
-    st.image("image.png", width=60)
+    st.image("/mnt/data/image.png", width=40)
 
 # 제목 넣기 (col2에 배치)
 with col2:
-    st.markdown("<h1 style='display: inline; vertical-align: middle;'>주니어보드 챗봇</h1>", unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div style="display: flex; align-items: center; height: 100%;">
+            <h1 style='display: inline; vertical-align: middle; margin: 0;'>주니어보드 챗봇</h1>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
 
 # col1, col2 = st.columns([3,1])
 # with col1:
