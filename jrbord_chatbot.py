@@ -168,7 +168,7 @@ def get_faiss_db():
         model_name=model_name,
         model_kwargs=model_kwargs,
         encode_kwargs=encode_kwargs)
-    db = FAISS.load_local("C:\python-RAG\jrchat_test(1007)_4", hf, allow_dangerous_deserialization=True)
+    db = FAISS.load_local("jrchat_test(1007)_4", hf, allow_dangerous_deserialization=True)
     return db
 
 class StreamHandler(BaseCallbackHandler):
