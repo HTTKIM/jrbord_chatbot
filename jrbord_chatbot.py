@@ -222,8 +222,8 @@ qa_chain = ConversationalRetrievalChain.from_llm(
     llm, retriever=retriever, memory=memory, verbose=True
 )
 
-if len(msgs.messages) == 0 or st.sidebar.button("Clear message history"):
-    msgs.clear()
+if len(msgs.messages) == 0:
+    # msgs.clear()
     msgs.add_ai_message("무엇을 도와드릴까요?")
 
 avatars = {"human": "user", "ai": "assistant"}
