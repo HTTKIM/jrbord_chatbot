@@ -54,7 +54,7 @@ st.markdown(
     
     /* 메인 헤더 스타일 */
     .main-header {
-        font-size: 30px;  /* 글씨 크기 */
+        font-size: 28px;  /* 글씨 크기 */
         font-weight: bold;  /* 굵게 */
         color: #333333;  /* 텍스트 색상 */
         display: flex;  /* 아이콘과 텍스트 정렬 */
