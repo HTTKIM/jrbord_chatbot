@@ -205,10 +205,10 @@ def display_retrieved_documents(documents):
             source = os.path.basename(doc.metadata["source"])
             st.markdown(f"** from {source}**")
 
-# db = get_faiss_db()
-# retriever = db.as_retriever(search_type="similarity",
-#                             search_kwargs={'k':5, 'fetch_k':8},
-#                             )     
+db = get_faiss_db()
+retriever = db.as_retriever(search_type="similarity",
+                            search_kwargs={'k':5, 'fetch_k':8},
+                            )     
 
 # Setup memory for contextual conversation
 msgs = StreamlitChatMessageHistory()
